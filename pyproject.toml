@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "browser-use-progetto"
+version = "0.1.0"
+description = "Toolkit per agenti browser con browser-use e GPT-4o"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Pietro Cammise", email = "pietro_cam@hotmail.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "browser-use>=0.12.6",
+    "anthropic>=0.40.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[project.urls]
+Homepage = "https://github.com/Auticad/browser-use-progetto"
+Author = "https://auticad.github.io/cv_cammise/"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

@@ -1,0 +1,30 @@
+# .gitignore
+
+# Variabili d'ambiente — MAI committare
+.env
+
+# Ambienti virtuali
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Build e distribuzione
+dist/
+build/
+
+# Screenshot e registrazioni browser
+*.png
+recordings/
+
+# Dati locali (non versionati)
+profili/
+risultati/
+
+# Test
+.pytest_cache/
